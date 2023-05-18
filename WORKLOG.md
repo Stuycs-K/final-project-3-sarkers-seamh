@@ -1,19 +1,19 @@
 # Work Log
 
-## GROUP MEMBER 1
+## Hamim
 
-### date x
+### 05-18-2023
 
-info
+- Worked on TryhackMe room for Volatility
 
 ### date y
 
 info
 
 
-## GROUP MEMBER 2
+## Samin
 
-### date x
+### 05-18-2023
 
 info
 
