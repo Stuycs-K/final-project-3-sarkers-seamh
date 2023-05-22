@@ -1,34 +1,12 @@
 # Work Log
 
-## Samin
-
 ### 05-17-2023
-
-- Created repo and added project description
-
-## Hamim
+- Samin: Created repo and added project description
 
 ### 05-18-2023
+- Hamim: Worked on TryhackMe room for Volatility
+- Samin: Worked on Tryhackme room to learn Volatility
 
-- Worked on TryhackMe room for Volatility
-
-## Samin
-
-### 05-18-2023
-
-- Worked on Tryhackme room to learn Volatility
-
-### date y
-
-info
-
-
-## Samin
-
-### 05-18-2023
-
-info
-
-### date y
-
-info
+### 05-22-2023
+- Hamim: 
+- Samin: Added directions to download volatility and reorganized work log
