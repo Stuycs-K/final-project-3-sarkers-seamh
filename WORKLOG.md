@@ -7,6 +7,8 @@
 - Hamim: Worked on TryhackMe room for Volatility
 - Samin: Worked on Tryhackme room to learn Volatility
 
-### 05-22-2023
-- Hamim: 
+### 05-22-2023 
 - Samin: Added directions to download volatility and reorganized work log
+
+### 05-25-2023
+- Hamim: Updated instructions to include memory acquisition using AVML (for Linux machines)
