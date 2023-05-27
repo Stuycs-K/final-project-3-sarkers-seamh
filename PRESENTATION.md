@@ -30,6 +30,7 @@
   - We'll be using a program called DumpIt.exe
 
 - MacOS
+  - Working on this...
 
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
