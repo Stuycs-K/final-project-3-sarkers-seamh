@@ -28,6 +28,9 @@
 
 
 
+
+SAMIN WORK
+
 ### WRITEUP:
 - Volatility is a memory forensics tool that is used to analyze memory dumps
 - It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
