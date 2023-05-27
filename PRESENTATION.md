@@ -17,8 +17,7 @@
 ```alias volatility='python3 path/to/directory/vol.py'```
 - **Alternatively**: You can use the volatility preinstalled in the volatility tryhackme room
 
-- ### How to perform volatile memory acquisition
-
+### How to perform volatile memory acquisition
 - Linux
   - We'll use a program called AVML to create a memory image
   - Run this command: ```wget https://github.com/microsoft/avml/releases/download/v0.11.2/avml``` to download the program```
@@ -32,7 +31,7 @@
 - MacOS
   - Working on this...
 
-- ### C Program to generate memory dumps on a machine
+### C Program to generate memory dumps on a machine
 ```C
 void memoryDump() 
 {
