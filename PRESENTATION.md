@@ -43,3 +43,11 @@ SAMIN WORK
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
 - Before analysis you must identify the type of memory dump image
+Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
+
+
+When using a plugin you must specify the OS type
+.windows
+.mac
+.linux
+To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
