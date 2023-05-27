@@ -29,9 +29,9 @@
 
 
 
-SAMIN WORK
+# SAMIN WORK ADDED 
 
-## WRITEUP:
+## WRITEUP
 - Volatility is a memory forensics tool that is used to analyze memory dumps
 - It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
 - Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
@@ -56,11 +56,23 @@ SAMIN WORK
 
 ## PLUGINS
 - **info**: information about the host running the memory dump
-  - Format: ```python3 vol.py -f <file> windows.info```
+  Format: ```python3 vol.py -f <file> windows.info```
 - **pslist**: will return the list of processes running from a doubly linked list that tracks processes from the memory; similar to the process list in task manager
-  - Format: ```python3 vol.py -f <file> windows.pslist```
+  Format: ```python3 vol.py -f <file> windows.pslist```
 - **pscan**: another way to identify running processes but by finding data structures that match ```E_PROCESS```; can help against malware evasion measures
-  - Format: ```python3 vol.py -f <file> windows.pscan```
+  Format: ```python3 vol.py -f <file> windows.psscan```
 - **pstree**: another way to identify processes using parent process id; provides a more fuller description of processes during extraction
-  - Format: ```python3 vol.py -f <file> windows.pstree```
+  Format: ```python3 vol.py -f <file> windows.pstree```
+- **netstat**: identifies all memory structures with a network connection
+  Format: ```python3 vol.py -f <file> windows.netstat```
+- **dlllist**: lists all the DLLs associated with processes at the time of extraction
+  DLLs or dynamically linked library is a collection of small programs that large programs can load and can be used spontaneously by many
+  Format: ```python3 vol.py -f <file> windows.dlllist```
+**malfind**: identifies any injected processes and their PIDs along with their offset address; works by scanning heaps and identifying processes with the executable bit set RWE or RX
+  Format: ```python3 vol.py -f <file> windows.malfind```
+
+## OTHER RESOURCES
+- [Official Website for Volatility] (https://www.volatilityfoundation.org/)
+- [List of command cheatsheet] (https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
+
 
