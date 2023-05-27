@@ -46,9 +46,9 @@
 - Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
 
 - When using a plugin you must specify the OS type
-- - .windows
-- - .mac
-- - .linux
+  .windows
+  .mac
+  .linux
 - In the case you don’t know the OS or image type of the memory dump you can use the ```imageinfo``` plugin, which assigns the best possible OS profile to the memory file
 
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
