@@ -72,7 +72,7 @@
   Format: ```python3 vol.py -f <file> windows.malfind```
 
 ## OTHER RESOURCES
-- [Official Website for Volatility] (https://www.volatilityfoundation.org/)
-- [List of command cheatsheet] (https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
+- [Official Website for Volatility](https://www.volatilityfoundation.org/)
+- [List of command cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
 
 
