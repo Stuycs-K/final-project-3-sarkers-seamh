@@ -68,7 +68,7 @@
 - **dlllist**: lists all the DLLs associated with processes at the time of extraction
   - DLLs or dynamically linked library is a collection of small programs that large programs can load and can be used spontaneously by many
   - Format: ```python3 vol.py -f <file> windows.dlllist```
-**malfind**: identifies any injected processes and their PIDs along with their offset address; works by scanning heaps and identifying processes with the executable bit set RWE or RX
+- **malfind**: identifies any injected processes and their PIDs along with their offset address; works by scanning heaps and identifying processes with the executable bit set RWE or RX
   - Format: ```python3 vol.py -f <file> windows.malfind```
 
 ## OTHER RESOURCES
