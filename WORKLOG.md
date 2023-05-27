@@ -12,3 +12,9 @@
 
 ### 05-25-2023
 - Hamim: Updated instructions to include memory acquisition using AVML (for Linux machines)
+
+### 05-26-2023
+- Samin: Tested memory dump tool on linux machines
+
+### 05-27-2023
+- Samin: Updated presentation with more notes and began researching C program for memory dumps
