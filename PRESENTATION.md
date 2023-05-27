@@ -39,15 +39,27 @@ SAMIN WORK
 ### GETTING STARTED
 
 
-### NOTES
-- A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
-- Volatility uses multiple plugins to extract information from a memory dump
-- Before analysis you must identify the type of memory dump image
+NOTES
+A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+Volatility uses multiple plugins to extract information from a memory dump
+Before analysis you must identify the type of memory dump image
 Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
-
 
 When using a plugin you must specify the OS type
 .windows
 .mac
 .linux
+In the case you don’t know the OS or image type of the memory dump you can use the ```imageinfo``` plugin, which assigns the best possible OS profile to the memory file
+
 To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
+To use plugin follow format ```python3 vol.py -f ‘FILENAME’ imagetype/OSname.PLUGINname```
+
+PLUGINS
+**info**: information about the host running the memory dump
+Format: ```python3 vol.py -f <file> windows.info```
+**pslist**: will return the list of processes running from a doubly linked list that tracks processes from the memory; similar to the process list in task manager
+Format: ```python3 vol.py -f <file> windows.pslist```
+**pscan**: another way to identify running processes but by finding data structures that match ```E_PROCESS```; can help against malware evasion measures
+Format: ```python3 vol.py -f <file> windows.pscan```
+**pstree**: another way to identify processes using parent process id; provides a more fuller description of processes during extraction
+
