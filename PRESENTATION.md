@@ -32,6 +32,14 @@
 - MacOS
   - Working on this...
 
+- ### C Program to generate memory dumps on a machine
+```C
+void memoryDump() 
+{
+ 
+}
+```
+
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
