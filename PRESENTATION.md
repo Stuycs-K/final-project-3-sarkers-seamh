@@ -31,15 +31,15 @@
 
 SAMIN WORK
 
-### WRITEUP:
+## WRITEUP:
 - Volatility is a memory forensics tool that is used to analyze memory dumps
 - It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
 - Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
 
-### GETTING STARTED
+## GETTING STARTED
 
 
-NOTES
+## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
 - Before analysis you must identify the type of memory dump image
@@ -54,12 +54,13 @@ NOTES
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
 - To use plugin follow format ```python3 vol.py -f ‘FILENAME’ imagetype/OSname.PLUGINname```
 
-PLUGINS
+## PLUGINS
 - **info**: information about the host running the memory dump
-- - Format: ```python3 vol.py -f <file> windows.info```
+  - Format: ```python3 vol.py -f <file> windows.info```
 - **pslist**: will return the list of processes running from a doubly linked list that tracks processes from the memory; similar to the process list in task manager
-- - Format: ```python3 vol.py -f <file> windows.pslist```
+  - Format: ```python3 vol.py -f <file> windows.pslist```
 - **pscan**: another way to identify running processes but by finding data structures that match ```E_PROCESS```; can help against malware evasion measures
-- - Format: ```python3 vol.py -f <file> windows.pscan```
+  - Format: ```python3 vol.py -f <file> windows.pscan```
 - **pstree**: another way to identify processes using parent process id; provides a more fuller description of processes during extraction
+  - Format: ```python3 vol.py -f <file> windows.pstree```
 
