@@ -25,3 +25,18 @@
 - We'll be using a program called DumpIt.exe
 
 ### MacOS
+
+
+
+### WRITEUP:
+- Volatility is a memory forensics tool that is used to analyze memory dumps
+- It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
+- Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
+
+### GETTING STARTED
+
+
+### NOTES
+- A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+- Volatility uses multiple plugins to extract information from a memory dump
+- Before analysis you must identify the type of memory dump image
