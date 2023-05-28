@@ -80,5 +80,5 @@ void memoryDump()
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
-
-
+- [Quick Reference Cheatsheet #2](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
+	- Note: though an easy reference, this file is made for Volatility 2, so some features may not be included yet
