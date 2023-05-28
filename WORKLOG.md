@@ -18,3 +18,9 @@
 
 ### 05-27-2023
 - Samin: Updated presentation with more notes and began researching C program for memory dumps
+
+### 05-28-2023
+- Hamim: 
+	- Setup a virtual machine using VMWare to generate memory dumps compatible with Volatility
+		- Although AVML can generate memory dumps from WSL, they may not be compatible with Volatility
+	- Updated homework directions; the memory dump will be generated/customized using the VMWare virtual machine
