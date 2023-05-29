@@ -24,3 +24,4 @@
 	- Setup a virtual machine using VMWare to generate memory dumps compatible with Volatility
 		- Although AVML can generate memory dumps from WSL, they may not be compatible with Volatility
 	- Updated homework directions; the memory dump will be generated/customized using the VMWare virtual machine
+- Samin: Worked on building a C program to extract RAM and updated presentation with more resources and plugins
