@@ -113,3 +113,25 @@ class OwnPlugin(plugins.PluginInterface):
 - [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)
 
 - [Resource Docs](https://volatility3.readthedocs.io/en/latest/basics.html)
+
+
+### C Program to generate memory dumps on a machine
+ [research](https://chaoticlab.io/c/c++/hacks/2018/08/08/dumpmem.html)
+ ```C
+ void memoryDump()
+import subprocess
+
+def generate_kernel_memory_dump(output_file):
+    try:
+        # Run the WinPmem utility with admin privileges to generate the kernel memory dump
+        subprocess.run(["WinPmem.exe", "-o", output_file, "-N"], check=True)
+
+        print(f"Kernel memory dump generated successfully as {output_file}.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error generating kernel memory dump: {e}")
+
+# Usage example
+output_file = "kernel_memory.raw"  # Specify the desired output file path with .raw extension
+generate_kernel_memory_dump(output_file) 
+ {
+```
