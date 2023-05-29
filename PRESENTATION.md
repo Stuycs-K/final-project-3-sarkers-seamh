@@ -77,8 +77,12 @@ void memoryDump()
 - **malfind**: identifies any injected processes and their PIDs along with their offset address; works by scanning heaps and identifying processes with the executable bit set RWE or RX
   - Format: ```python3 vol.py -f <file> windows.malfind```
 
+- **hashdump**: extracts all the username and password hashes from the machine
+  - Format: ```python3 vol.py -f <file> windows.hashdump```
+
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
 - [Quick Reference Cheatsheet #2](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
 	- Note: though an easy reference, this file is made for Volatility 2, so some features may not be included yet
+- [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)
