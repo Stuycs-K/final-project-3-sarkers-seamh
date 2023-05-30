@@ -20,9 +20,9 @@
 ### How to perform volatile memory acquisition
 - Linux
   - We'll use a program called AVML to create a memory image
-  - Run this command: ```wget https://github.com/microsoft/avml/releases/download/v0.11.2/avml``` to download the program```
-  - To make it executable, run ```chmod a+x path/to/avml```
-  - To use the program, simply run ```avml <FILENAME>``` to a acquire a memory image and dump it to a file
+  - Run this command: `wget https://github.com/microsoft/avml/releases/download/v0.11.2/avml` to download the program
+  - To make it executable, run `chmod u+x path/to/avml`
+  - To use the program, simply run `avml <FILENAME>` to a acquire a memory image and dump it to a file
   - Now we are ready to analyze this image using Volatility
 
 - Windows

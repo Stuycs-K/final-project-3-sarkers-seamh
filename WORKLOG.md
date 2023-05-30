@@ -25,3 +25,7 @@
 		- Although AVML can generate memory dumps from WSL, they may not be compatible with Volatility
 	- Updated homework directions; the memory dump will be generated/customized using the VMWare virtual machine
 - Samin: Worked on building a C program to extract RAM and updated presentation with more resources and plugins
+
+### 05-29-2023
+- Hamim:
+	- Configured the required JSON symbol table file to analyze the memory dump for homework (now in `/resources`)
