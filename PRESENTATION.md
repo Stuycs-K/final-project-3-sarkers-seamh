@@ -117,21 +117,22 @@ class OwnPlugin(plugins.PluginInterface):
 
 ### C Program to generate memory dumps on a machine
  [research](https://chaoticlab.io/c/c++/hacks/2018/08/08/dumpmem.html)
- ```C
- void memoryDump()
+ ```python
 import subprocess
 
 def generate_kernel_memory_dump(output_file):
     try:
-        # Run the WinPmem utility with admin privileges to generate the kernel memory dump
-        subprocess.run(["WinPmem.exe", "-o", output_file, "-N"], check=True)
+        # Run the dumpchk command to generate the kernel memory dump
+        subprocess.run(["dumpchk", "-k", output_file], check=True)
 
-        print(f"Kernel memory dump generated successfully as {output_file}.")
+        print("Kernel memory dump generated successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error generating kernel memory dump: {e}")
+    except FileNotFoundError:
+        print("dumpchk utility not found. Make sure it is installed and accessible.")
 
 # Usage example
-output_file = "kernel_memory.raw"  # Specify the desired output file path with .raw extension
-generate_kernel_memory_dump(output_file) 
- {
+output_file = "kernel_memory_dump.dmp"  # Specify the desired output file path
+
+generate_kernel_memory_dump(output_file)
 ```
