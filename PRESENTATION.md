@@ -73,6 +73,11 @@
 
 ## OUR OWN PLUGIN
 ```
+import volatility.plugins.common as common
+
+class TestPlugin(common.AbstractWindowsCommand):
+  def render_text(self, outfd, data):
+    outfd.write("hi\n")
 ```
 
 ## OTHER RESOURCES
