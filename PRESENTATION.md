@@ -72,7 +72,7 @@
   - Format: ```python3 vol.py -f <file> windows.hashdump```
 
 ## OUR OWN PLUGIN
-```
+```python
 import volatility.plugins.common as common
 
 class TestPlugin(common.AbstractWindowsCommand):
