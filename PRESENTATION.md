@@ -15,7 +15,6 @@
 - You can see the possible commands to run with volatality using the -h flag: ```python3 vol.py -h```
 - **Note**: You may want to create an alias to this program for ease of access by adding this to your .bashrc/.profile: 
 ```alias volatility='python3 path/to/directory/vol.py'```
-- **Alternatively**: You can use the volatility preinstalled in the volatility tryhackme room
 
 ### How to perform volatile memory acquisition
 - Linux
@@ -26,10 +25,10 @@
   - Now we are ready to analyze this image using Volatility
 
 - Windows
-  - We'll be using a program called DumpIt.exe
+  - You can use FTKImager
 
 - MacOS
-  - Working on this...
+  - You can use OSXPMem
 
 ### C Program to generate memory dumps on a machine
 [research](https://chaoticlab.io/c/c++/hacks/2018/08/08/dumpmem.html)
@@ -55,7 +54,7 @@ void memoryDump()
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
 - To use plugin follow format ```python3 vol.py -f ‘FILENAME’ imagetype/OSname.PLUGINname```
 
-## PLUGINS
+## EXAMPLE PLUGINS
 - **info**: information about the host running the memory dump
   - Format: ```python3 vol.py -f <file> windows.info```
  
@@ -84,6 +83,4 @@ void memoryDump()
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
-- [Quick Reference Cheatsheet #2](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
-	- Note: though an easy reference, this file is made for Volatility 2, so some features may not be included yet
 - [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)

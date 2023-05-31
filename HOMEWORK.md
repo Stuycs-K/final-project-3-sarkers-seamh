@@ -7,8 +7,8 @@
 - Submit the output of the following plugins:
 	- isfinfo
 	- banners
-	- linux.info
 	- linux.pslist
 	- linux.psscan
 	- linux.pstree
-	- linux.malfind
+	- linux.envvars
+	- linux.bash
