@@ -30,15 +30,6 @@
 - MacOS
   - You can use OSXPMem
 
-### C Program to generate memory dumps on a machine
-[research](https://chaoticlab.io/c/c++/hacks/2018/08/08/dumpmem.html)
-```C
-void memoryDump() 
-{
- 
-}
-```
-
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
@@ -79,6 +70,10 @@ void memoryDump()
 
 - **hashdump**: extracts all the username and password hashes from the machine
   - Format: ```python3 vol.py -f <file> windows.hashdump```
+
+## OUR OWN PLUGIN
+```
+```
 
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
