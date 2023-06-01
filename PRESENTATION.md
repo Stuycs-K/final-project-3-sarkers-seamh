@@ -1,7 +1,11 @@
-## WRITEUP
-- Volatility is a memory forensics tool that is used to analyze memory dumps
-- It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
-- Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
+## INTRO
+Volatility is a memory forensics tool that is used to extract information from memory images (memory dumps) of different OS systems
+
+It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
+
+Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
+
+Volatility3 is the successor of Volatility2 and is most recent version of the tool
 
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
@@ -51,3 +55,4 @@ class TestPlugin(common.AbstractWindowsCommand):
 - [Volatility Docs](https://volatility3.readthedocs.io/en/latest/index.html)
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
 - [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)
+- [Resource Docs](https://volatility3.readthedocs.io/en/latest/basics.html)
