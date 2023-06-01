@@ -63,15 +63,15 @@ class TestPlugin(common.AbstractWindowsCommand):
 
 ## Dictionary
 
-- Memory image: a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+- ```Memory image```: a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 
-- DLLs or dynamically linked library: a collection of small programs that large programs can load and can be used spontaneously by many
+- ```DLLs or dynamically linked library```: a collection of small programs that large programs can load and can be used spontaneously by many
 
-- Memory layer: a group of data that can be accessed by making requests at a specified address
+- ```Memory layer```: a group of data that can be accessed by making requests at a specified address
 
-- Directed graph: a type of graph or node connection connected by edges with directions
+- ```Directed graph```: a type of graph or node connection connected by edges with directions
 
-- Template: contains all information attainable about the structure of an object without any actual data writtern
+- ```Template```: contains all information attainable about the structure of an object without any actual data writtern
 
 
 ## Other Resources
