@@ -3,47 +3,13 @@
 - It is the most widely used framework to extract digital artifacts and information from volatile memory or RAM
 - Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal
 
-## GETTING STARTED
-### How to download Volatility for Linux, Windows, and Mac:
-- Head over to this github repo and clone the repository
-```git clone git@github.com:volatilityfoundation/volatility3.git```
-- The most current version of volatility requires Python 3.7.0 or later
-- You can download the latest Python version from the web and the necessary dependancies with the following command: 
-```pip3 install -r requirements-minimal.txt```
-- cd into the volatility3 directory
-- You can now run volatility3 commands using ```python3 vol.py COMMAND```
-- You can see the possible commands to run with volatality using the -h flag: ```python3 vol.py -h```
-- **Note**: You may want to create an alias to this program for ease of access by adding this to your .bashrc/.profile: 
-```alias volatility='python3 path/to/directory/vol.py'```
-
-### How to perform volatile memory acquisition
-- Linux
-  - We'll use a program called AVML to create a memory image
-  - Run this command: `wget https://github.com/microsoft/avml/releases/download/v0.11.2/avml` to download the program
-  - To make it executable, run `chmod u+x path/to/avml`
-  - To use the program, simply run `avml <FILENAME>` to a acquire a memory image and dump it to a file
-  - Now we are ready to analyze this image using Volatility
-
-- Windows
-  - You can use FTKImager
-
-- MacOS
-  - You can use OSXPMem
-
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
 - Before analysis you must identify the type of memory dump image
 - Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
-
-- When using a plugin you must specify the OS type
-  - .windows
-  - .mac
-  - .linux
-- In the case you don’t know the OS or image type of the memory dump you can use the ```imageinfo``` plugin, which assigns the best possible OS profile to the memory file
-
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
-- To use plugin follow format ```python3 vol.py -f ‘FILENAME’ imagetype/OSname.PLUGINname```
+- To use plugin follow format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
 
 ## EXAMPLE PLUGINS
 - **info**: information about the host running the memory dump
@@ -82,5 +48,6 @@ class TestPlugin(common.AbstractWindowsCommand):
 
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
+- [Volatility Docs](https://volatility3.readthedocs.io/en/latest/index.html)
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
 - [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)
