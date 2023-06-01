@@ -6,9 +6,8 @@
 
 - Q1) What version of Linux was running on this machine?
 - Q2) What process was running under PID 44252?
-- Q3) Where did the user ssh into?
-- Q4) What browser was open, and what was the parent process of this program?
-- Q5) What file did the user download from the internet?
-- Q6) What was the value of the `XDG_SESSION_TYPE` environment variable?
+- Q3) What browser was open, and what was the parent process of this program?
+- Q4) What file did the user download from the internet?
+- Q5) What was the value of the `XDG_SESSION_TYPE` environment variable?
 
 Please also state which plugins you used to find each answer.

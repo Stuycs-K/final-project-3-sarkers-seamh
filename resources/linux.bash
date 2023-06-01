@@ -11,5 +11,4 @@ PID	Process	CommandTime	Command
 43824	bash	2023-06-01 00:02:00.000000 	wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 43824	bash	2023-06-01 00:02:34.000000 	fortune -l | cowsay | lolcat
 43824	bash	2023-06-01 00:02:55.000000 	sudo ./avml memory.dmp
-44245	bash	2023-05-31 23:58:57.000000 	ssh hseam30@149.89.161.103
 44429	bash	2023-06-01 00:03:33.000000 	ls -l memory.dmp 
