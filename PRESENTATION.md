@@ -46,8 +46,8 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 
 
 ## Example Outputs
-<img src="images/image1.png" alt="image1" style="width:700px;"/>
-<img src="images/image2.png" alt="image2" style="width:600px;"/>
+<img src="images/image1.png" alt="image1" style="width:800px;"/>
+<img src="images/image2.png" alt="image2" style="width:800px;"/>
 
 
 ## Our own plugin
