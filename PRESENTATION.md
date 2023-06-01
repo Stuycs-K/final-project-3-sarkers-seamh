@@ -6,13 +6,17 @@ It is the most widely used framework to extract digital artifacts and informatio
 
 Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal.
 
-
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+
 - Volatility uses multiple plugins to extract information from a memory dump
+
 - Before analysis you must identify the type of memory dump image
+
 - Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
+
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
+
 - To use plugin follow format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
 
 ## EXAMPLE PLUGINS
@@ -52,7 +56,11 @@ class TestPlugin(common.AbstractWindowsCommand):
 
 ## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
+
 - [Volatility Docs](https://volatility3.readthedocs.io/en/latest/index.html)
+
 - [List of commands cheatsheet](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/memory-dump-analysis/volatility-cheatsheet)
+
 - [Youtube Tutorial on Volatility](https://www.youtube.com/watch?v=Uk3DEgY5Ue8)
+
 - [Resource Docs](https://volatility3.readthedocs.io/en/latest/basics.html)
