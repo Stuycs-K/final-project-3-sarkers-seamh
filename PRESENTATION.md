@@ -75,6 +75,8 @@ class OwnPlugin(plugins.PluginInterface):
             filename = task.ImageFileName.cast("string",  max_length = task.ImageFileName.vol.count, errors = 'replace')
             yield (0, [pid, filename])
 ```
+> placed in directory ```volatility3/plugins/windows```
+> to run your own plugin follow format ```python3 vol.py -f <Filename> windows.<PluginFileName>.<PluginClassName>``` 
 
 
 ## Dictionary
