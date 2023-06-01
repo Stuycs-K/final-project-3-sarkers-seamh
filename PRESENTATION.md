@@ -7,14 +7,6 @@ It is the most widely used framework to extract digital artifacts and informatio
 Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal.
 
 
-## INSTALLATION
-
-1. Clone the latest version of Volatility3 from the Github Repository https://github.com/volatilityfoundation/volatility3 or run ```git clone https://github.com/volatilityfoundation/volatility3.git```
-<img src="image1.png" alt="image1"/>
-
-2. 
-
-
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 - Volatility uses multiple plugins to extract information from a memory dump
