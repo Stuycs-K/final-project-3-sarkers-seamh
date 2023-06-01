@@ -52,6 +52,8 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 
 ## Our own plugin
 
+> simple plugin to list all PIDs and their names
+
 ```python
 class OwnPlugin(plugins.PluginInterface):
     tuple_version = (2, 0, 0)
@@ -75,8 +77,10 @@ class OwnPlugin(plugins.PluginInterface):
             filename = task.ImageFileName.cast("string",  max_length = task.ImageFileName.vol.count, errors = 'replace')
             yield (0, [pid, filename])
 ```
-> placed in directory ```volatility3/plugins/windows```
-> to run your own plugin follow format ```python3 vol.py -f <Filename> windows.<PluginFileName>.<PluginClassName>``` 
+
+- place plugin in directory ```volatility3/plugins/windows```
+
+- to run your own plugin follow format ```python3 vol.py -f <Filename> windows.<PluginFileName>.<PluginClassName>``` 
 
 
 ## Dictionary
