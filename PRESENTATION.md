@@ -1,4 +1,4 @@
-## INTRO
+## Intro
 
 Volatility is a memory forensics tool that is used to extract information from memory images (memory dumps) of different OS systems.
 
@@ -7,13 +7,22 @@ It is the most widely used framework to extract digital artifacts and informatio
 Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal.
 
 
-## NOTES
+## Under the Hood
 
-- A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+The tool splits memory analysis into 3 components ```memory layers```, ```templates and objects```, and ```symbol tables```.
+
+| Component                 | Description   |
+| -------------             | ------------- |
+| **memory layers**         | represented as a ```directed graph``` in volatility and makes use of requesting addresses from the layer to retrive data |
+| **templates and objects** | upon addressing a section of memory pulls objects and templates to attain information of the structures |
+| **symbol tables**         | a list of symbols, addresses or ```templates```, that specifies the keywords taken by the compiler|
+
+
+## Notes
 
 - Volatility uses multiple plugins to extract information from a memory dump
 
-- Before analysis you must identify the type of memory dump image
+- Before analysis you must identify the type of memory dump image → ```python3 vol.py -f <FILENAME> imageinfo```
 
 - Extracting the memory itself can be performed in a variety of ways and using multiple tools which most often output a .raw file
 
@@ -22,12 +31,7 @@ Some uses of Volatility include listing running processes, closed/open networks,
 - To use plugin follow format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
 
 
-## DICT
-
-- DLLs or dynamically linked library is a collection of small programs that large programs can load and can be used spontaneously by many
-
-
-## EXAMPLE PLUGINS
+## List of Plugins
 
 | Plugin        | Description   |
 | ------------- | ------------- |
@@ -41,8 +45,21 @@ Some uses of Volatility include listing running processes, closed/open networks,
 | **hashdump**  | extracts all the username and password hashes from the machine |
 
 
+## Dictionary
 
-## OUR OWN PLUGIN
+- Memory image: a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
+
+- DLLs or dynamically linked library: a collection of small programs that large programs can load and can be used spontaneously by many
+
+- Memory layer: a group of data that can be accessed by making requests at a specified address
+
+- Directed graph: a type of graph or node connection connected by edges with directions
+
+- Template: contains all information attainable about the structure of an object without any actual data writtern
+
+
+## Our own plugin
+
 ```python
 import volatility.plugins.common as common
 
@@ -51,8 +68,8 @@ class TestPlugin(common.AbstractWindowsCommand):
     outfd.write("hi\n")
 ```
 
+## Other Resources
 
-## OTHER RESOURCES
 - [Official Website for Volatility](https://www.volatilityfoundation.org/)
 
 - [Volatility Docs](https://volatility3.readthedocs.io/en/latest/index.html)
