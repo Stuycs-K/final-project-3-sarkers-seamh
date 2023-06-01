@@ -12,6 +12,7 @@
 
 ### 05-25-2023
 - Hamim: Updated instructions to include memory acquisition using AVML (for Linux machines)
+- Samin: Continued to learn Volatility via online videos and websites
 
 ### 05-26-2023
 - Samin: Tested memory dump tool on linux machines
@@ -29,3 +30,9 @@
 ### 05-29-2023
 - Hamim:
 	- Configured the required JSON symbol table file to analyze the memory dump for homework (now in `/resources`)
+
+### 05-30-2023
+- Samin: researched how to make a volatility plugin and started to write code
+
+### 06-01-2023
+- Samin: finished creating our own plugin and reorganized presentation
