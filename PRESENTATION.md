@@ -10,6 +10,8 @@ Some uses of Volatility include listing running processes, closed/open networks,
 ## INSTALLATION
 
 1. Clone the latest version of Volatility3 from the Github Repository https://github.com/volatilityfoundation/volatility3 or run ```git clone https://github.com/volatilityfoundation/volatility3.git```
+<img src="image1.png" alt="image1"/>
+
 2. 
 
 
