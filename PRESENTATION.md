@@ -9,13 +9,13 @@ Some uses of Volatility include listing running processes, closed/open networks,
 
 ## Under the Hood
 
-The tool splits memory analysis into 3 components ```memory layers```, ```templates and objects```, and ```symbol tables```.
+The tool splits memory analysis into 3 components `memory layers`, `templates and objects`, and `symbol tables`.
 
 | Component                 | Description   |
 | -------------             | ------------- |
-| **memory layers**         | represented as a ```directed graph``` in volatility and makes use of requesting addresses from the layer to retrive data |
+| **memory layers**         | represented as a `directed graph` in volatility and makes use of requesting addresses from the layer to retrive data |
 | **templates and objects** | upon addressing a section of memory pulls objects and templates to attain information of the structures |
-| **symbol tables**         | a list of symbols, addresses or ```templates```, that specifies the keywords taken by the compiler|
+| **symbol tables**         | a list of symbols, addresses or `templates`, that specifies the keywords taken by the compiler|
 
 
 ## Notes
@@ -45,6 +45,23 @@ The tool splits memory analysis into 3 components ```memory layers```, ```templa
 | **hashdump**  | extracts all the username and password hashes from the machine |
 
 
+## Example Outputs
+
+
+
+
+
+## Our own plugin
+
+```python
+import volatility.plugins.common as common
+
+class TestPlugin(common.AbstractWindowsCommand):
+  def render_text(self, outfd, data):
+    outfd.write("hi\n")
+```
+
+
 ## Dictionary
 
 - Memory image: a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
@@ -57,16 +74,6 @@ The tool splits memory analysis into 3 components ```memory layers```, ```templa
 
 - Template: contains all information attainable about the structure of an object without any actual data writtern
 
-
-## Our own plugin
-
-```python
-import volatility.plugins.common as common
-
-class TestPlugin(common.AbstractWindowsCommand):
-  def render_text(self, outfd, data):
-    outfd.write("hi\n")
-```
 
 ## Other Resources
 
