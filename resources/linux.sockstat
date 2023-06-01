@@ -1,0 +1,12 @@
+Volatility 3 Framework 2.4.2
+
+NetNS	Pid	FD	Sock Offset	Family	Type	Proto	Source Addr	Source Port	Destination Addr	Destination Port	State	Filter
+
+4026531840	1	15	0x96ba523a8800	AF_NETLINK	RAW	NETLINK_KOBJECT_UEVENT	groups:0x00000002	1	group:0x00000000	0	UNCONNECTED	filter_type=socket_filter,bpf_filter_type=cBPF
+4026531840	1	19	0x96ba40074c00	AF_UNIX	STREAM	-	/run/systemd/private	22218	-	-	LISTEN	-
+4026531840	1	20	0x96ba40077800	AF_UNIX	STREAM	-	/run/systemd/userdb/io.systemd.DynamicUser	22220	-	-	LISTEN	-
+4026531840	1	21	0x96ba40077400	AF_UNIX	STREAM	-	/run/systemd/io.system.ManagedOOM	22221	-	-	LISTEN	-
+4026531840	1	24	0x96b97dbc6c00	AF_UNIX	STREAM	-	/run/systemd/journal/stdout	209928	-	209927	ESTABLISHED	-
+4026531840	1	28	0x96b965c93800	AF_UNIX	STREAM	-	/run/systemd/journal/stdout	210992	-	210455	ESTABLISHED	-
+4026531840	1	30	0x96ba87575400	AF_UNIX	STREAM	-	/run/systemd/journal/stdout	210993	-	210456	ESTABLISHED	-
+
