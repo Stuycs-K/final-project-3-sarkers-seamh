@@ -55,6 +55,12 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 > simple plugin to list all PIDs and their names
 
 ```python
+from volatility3.plugins.windows import pslist
+from volatility3.framework.interfaces import plugins
+from typing import List
+from volatility3.framework import renderers, interfaces
+from volatility3.framework.configuration import requirements
+
 class OwnPlugin(plugins.PluginInterface):
     tuple_version = (2, 0, 0)
     _required_framework_version = tuple_version
