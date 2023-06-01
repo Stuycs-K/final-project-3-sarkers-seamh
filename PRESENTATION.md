@@ -6,6 +6,7 @@ It is the most widely used framework to extract digital artifacts and informatio
 
 Some uses of Volatility include listing running processes, closed/open networks, internet history, hashed passwords, and retrieving commands entered into the terminal.
 
+
 ## NOTES
 - A memory image is a programming pattern in which data stored in the database resides in the memory → more simply it is a copy/snapshot of a machines virtual memory saved to a file for easier analysis and viewing
 
@@ -19,7 +20,23 @@ Some uses of Volatility include listing running processes, closed/open networks,
 
 - To use plugin follow format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
 
+
 ## EXAMPLE PLUGINS
+
+| Plugin        | Description   | Format     |
+| ------------- | ------------- | ------     |
+| **info**      | information about the host running the memory dump       | Here's this   |
+| **pslist**    | will return the list of processes running from a doubly linked list that tracks processes from the memory; similar to the process list in task manager       | And more      |
+| **psscan**    | another way to identify running processes but by finding data structures that match ```E_PROCESS```; can help against malware evasion measures        | And more      |
+| **pstree**    | another way to identify processes using parent process id; provides a more fuller description of processes during extraction        | And more      |
+| **netstat**   | identifies all memory structures with a network connection        | And more      |
+| **dlllist**   | lists all the DLLs associated with processes at the time of extraction        | And more      |
+| **malfind**   | identifies any injected processes and their PIDs along with their offset address; works by scanning heaps and identifying processes with the executable bit set RWE or RX        | And more      |
+| **hashdump**  | extracts all the username and password hashes from the machine        | And more      |
+
+
+
+
 - **info**: information about the host running the memory dump
   - Format: ```python3 vol.py -f <file> windows.info```
  
