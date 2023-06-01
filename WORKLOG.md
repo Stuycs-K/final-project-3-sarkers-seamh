@@ -7,6 +7,9 @@
 - Hamim: Worked on TryhackMe room for Volatility
 - Samin: Worked on Tryhackme room to learn Volatility
 
+### 05-18-2023
+- Both Absent due to AP testing
+
 ### 05-22-2023 
 - Samin: Added directions to download volatility and reorganized work log
 
