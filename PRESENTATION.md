@@ -13,7 +13,7 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 
 | Component                 | Description   |
 | -------------             | ------------- |
-| **memory layers**         | represented as a `directed graph` in volatility and makes use of requesting addresses from the layer to retrive data |
+| **memory layers**         | represented as a `directed graph` in volatility and makes use of requesting addresses from the layer to retrieve data |
 | **templates and objects** | upon addressing a section of memory pulls objects and templates to attain information of the structures |
 | **symbol tables**         | a list of symbols, addresses or `templates`, that specifies the keywords taken by the compiler|
 
@@ -28,7 +28,7 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 
 - To see the possible plugins use the help menu of volatility ```python3 vol.py -h```
 
-- To use plugin follow format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
+- To use a plugin follow the format ```python3 vol.py -f <FILENAME> <OSname>.<PLUGINname>```
 
 
 ## List of Plugins
@@ -36,7 +36,7 @@ The tool splits memory analysis into 3 components `memory layers`, `templates an
 | Plugin        | Description   |
 | ------------- | ------------- |
 | **info**      | information about the host running the memory dump |
-| **pslist**    | will return the list of processes running from a doubly linked list that tracks processes from the memory; similar to the process list in task manager |
+| **pslist**    | will return the list of processes running from a double linked list that tracks processes from the memory; similar to the process list in task manager |
 | **psscan**    | another way to identify running processes but by finding data structures that match ```E_PROCESS```; can help against malware evasion measures |
 | **pstree**    | another way to identify processes using parent process id; provides a more fuller description of processes during extraction |
 | **netstat**   | identifies all memory structures with a network connection |
