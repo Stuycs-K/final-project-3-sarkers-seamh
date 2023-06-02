@@ -9,5 +9,3 @@
 - Q5) What was the value of the `XDG_SESSION_TYPE` environment variable?
 
 Please also state which plugins you used to find each answer.
-
-- Complete the TryHackMe room. ```https://tryhackme.com/room/volatility```
