@@ -36,6 +36,9 @@
 
 ### 05-30-2023
 - Samin: researched how to make a volatility plugin and started to write code
+- Hamim: Changed homework to not need the actual memory dump (working off plugin outputs in txt files)
+
 
 ### 06-01-2023
 - Samin: finished creating our own plugin and reorganized presentation
+- Hamim: Updated presentation and README to match required info
