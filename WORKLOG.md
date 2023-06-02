@@ -37,7 +37,7 @@
 
 
 ## 05-25-2023
-- Continued to learn Volatility via online videos and websites; specifically password and username plugin hashing
+- Continued to learn Volatility via online videos and websites; specifically password and username plugin hashes
 
 
 ## 05-26-2023
