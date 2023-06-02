@@ -4,7 +4,7 @@
 
 - Samin: Created repository and added group project description to READ.md; started planning lesson
 
-- Hamim: Absent
+- Hamim: Started planning specifics with Samin
 
 
 ## 05-18-2023
@@ -37,7 +37,6 @@
 
 - Samin: Added directions to download volatility by cloning repository and re-organized the group work log
 
-
 ## 05-23-2023
 
 - Samin: Finalized google doc and information to be included in repository with Hamim
@@ -63,11 +62,13 @@
 
 - Samin: Tested memory dump tool on linux machines through ssh; Tested mac memory dump tool on own machine
 
+- Hamim: Researching LiME and testing AVML for memory acquisition of Linux machines
 
 ## 05-27-2023
 
 - Samin: Updated presentation with more notes and began researching a C program to create memory dumps
 
+- Hamim: Researching Volatility libraries and symbol tables
 
 ## 05-28-2023
 
